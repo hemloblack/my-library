@@ -5,8 +5,8 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 
-define('SMS_API_KEY',    'S8rT72DEEi5paD1UbRRsPNZBOWtes1KCSlPyx7ofygZazUNY');
-define('SMS_LINE_NUMBER', '30002108027251');   
+define('SMS_API_KEY',    '--');
+define('SMS_LINE_NUMBER', '--');   
 function generateOtpCode(): string {
     return str_pad((string)random_int(100000, 999999), 6, '0', STR_PAD_LEFT);
 }
